@@ -2,10 +2,14 @@
   "name": "with-hardhat",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "hardhat compile && next dev",
+    "dev:hardhat": "hardhat node",
+    "build": "hardhat compile && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "scdeploy": "hardhat run scripts/deploy.ts"
   },
   "dependencies": {
     "autoprefixer": "^10.4.0",
