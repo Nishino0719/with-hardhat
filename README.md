@@ -20,3 +20,24 @@ npx prettier '**/*.{json,sol,md}' --write
 npx solhint 'contracts/**/*.sol'
 npx solhint 'contracts/**/*.sol' --fix
 ```
+
+## development
+
+```bash
+npx hardhat
+
+```
+
+## package
+
+[useDApp](https://usedapp.io/#about)
+
+```bash
+ yarn add @ethersproject/providers @web3-react/core @web3-react/injected-connector @web3-react/walletconnect-connector ethers web3
+```
+
+## deploy
+
+```bash
+yarn scdeploy --network ropsten
+```
