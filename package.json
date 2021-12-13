@@ -2,9 +2,9 @@
   "name": "with-hardhat",
   "private": true,
   "scripts": {
-    "dev": "npm run compile && next dev",
+    "dev": "next dev",
     "dev:hardhat": "hardhat node",
-    "build": "npm run compile && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "compile": "hardhat compile",
