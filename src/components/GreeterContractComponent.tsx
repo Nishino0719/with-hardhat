@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ABI from '../../artifacts/contracts/Greeter.sol/Greeter.json'
+import ABI from '../contracts/Greeter.sol/Greeter.json'
 import { useEthers } from '@usedapp/core'
 import { utils, Contract } from 'ethers'
 
