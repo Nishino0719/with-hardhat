@@ -25,7 +25,15 @@ npx solhint 'contracts/**/*.sol' --fix
 
 ```bash
 npx hardhat
+```
 
+```bash
+# compile
+yarn compile
+# copy contracts json
+cp -r artifacts/contracts/ src/contracts/
+# dev
+yarn dev
 ```
 
 ## package
