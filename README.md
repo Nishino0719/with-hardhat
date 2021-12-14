@@ -41,7 +41,7 @@ yarn dev
 [useDApp](https://usedapp.io/#about)
 
 ```bash
- yarn add @ethersproject/providers @web3-react/core @web3-react/injected-connector @web3-react/walletconnect-connector ethers web3
+ yarn add @usedapp/core @ethersproject/providers @web3-react/core @web3-react/injected-connector @web3-react/walletconnect-connector ethers web3
 ```
 
 ## deploy
