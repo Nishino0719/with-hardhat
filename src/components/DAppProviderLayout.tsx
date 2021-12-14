@@ -6,7 +6,8 @@ type Props = {}
 const config: Config = {
   readOnlyChainId: ChainId.Ropsten,
   readOnlyUrls: {
-    [ChainId.Ropsten]: process.env.ROPSTEN_URL
+    [ChainId.Ropsten]:
+      'https://ropsten.infura.io/v3/85fe9488dddd41e89e2403d9ec90295f'
   }
 }
 
