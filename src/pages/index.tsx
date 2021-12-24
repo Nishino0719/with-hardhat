@@ -15,48 +15,7 @@ export default function Home() {
           This is a very simple contract that allows you to register greetings
           and have the registered greetings returned to you.
         </p>
-        <div className="flex flex-wrap justify-center ">
-          <div className="p-5 m-5 text-left border rounded-lg shadow-md w-96">
-            <p className="text-lg font-bold">
-              contractName:{' '}
-              <span className="text-green-400 ">
-                {GleetContract.contractName}
-              </span>
-            </p>
-          </div>
-          <div className="p-5 m-5 text-left border rounded-lg shadow-md w-96">
-            <p className="text-lg font-bold">
-              sourceName:{' '}
-              <span className="text-green-400 ">
-                {GleetContract.sourceName}
-              </span>
-            </p>
-          </div>
-          <div className="p-5 m-5 text-left border rounded-lg shadow-md w-96">
-            <p className="text-lg font-bold">
-              bytecode:{' '}
-              <span className="text-green-400 ">
-                {GleetContract.bytecode.slice(0, 20) + '...'}
-              </span>
-            </p>
-          </div>
-          <div className="p-5 m-5 text-left border rounded-lg shadow-md w-96">
-            <p className="text-lg font-bold">
-              deployedBytecode:{' '}
-              <span className="text-green-400 ">
-                {GleetContract.deployedBytecode.slice(0, 13) + '...'}
-              </span>
-            </p>
-          </div>
-          <div className="p-5 m-5 text-left border rounded-lg shadow-md w-96">
-            <p className="text-lg font-bold">
-              stateMutability:{' '}
-              <span className="text-green-400 ">
-                {GleetContract.abi[0].stateMutability}
-              </span>
-            </p>
-          </div>
-        </div>
+        <p>ABI → typechain</p>
         <Link href="/greet">
           <button className="w-64 p-2 my-5 font-bold duration-200 transform border-2 rounded-full shadow-md animate-pulse hover:scale-110">
             Trying out Greet SmartContract
