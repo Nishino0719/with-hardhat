@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ABI from '../contracts/Greeter.sol/Greeter.json'
 import { useEthers } from '@usedapp/core'
-import { utils, Contract } from 'ethers'
 import { Greeter__factory } from '../types/index'
 
 type Props = {}
@@ -21,14 +19,12 @@ export const GreeterContract: React.FC<Props> = (props) => {
   }
 
   const setGreeting = async (greeting: string): Promise<void> => {
-    const abiInterface: utils.Interface = new utils.Interface(ABI.abi)
-    const contract = new Contract(
-      `${process.env.NEXT_PUBLIC_CONTRACT_ADDRESS}`,
-      abiInterface,
-      library?.getSigner()
+    const greetContract = new Greeter__factory(library.getSigner()).attach(
+      process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
     )
-    await contract.setGreeting(greeting)
+    await greetContract.setGreeting(greeting)
   }
+
   useEffect(() => {
     if (library !== undefined) {
       setFetching(true)
