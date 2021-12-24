@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import GleetContract from '../contracts/Greeter.sol/Greeter.json'
 
 export default function Home() {
   return (
