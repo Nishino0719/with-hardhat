@@ -13,17 +13,6 @@ export const GreeterContract: React.FC<Props> = (props) => {
   const [fetching, setFetching] = useState(false)
 
   const getGreeter = async (): Promise<string> => {
-    const abiInterface: utils.Interface = new utils.Interface(ABI.abi)
-    const contract = new Contract(
-      `${process.env.NEXT_PUBLIC_CONTRACT_ADDRESS}`,
-      abiInterface,
-      library?.getSigner()
-    )
-    const greet: string = await contract.greet()
-    return greet
-  }
-
-  const newGetGreeter = async (): Promise<string> => {
     const greetContract = new Greeter__factory(library.getSigner()).attach(
       process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
     )
